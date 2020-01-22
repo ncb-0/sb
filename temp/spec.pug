@@ -1,0 +1,141 @@
+extends base.pug
+block vars
+  - var currentpage = "spec"
+block layout
+  #grid
+    //- .top
+      h1 Spec
+    .left
+      h3 info
+      //- p A neo-grotesque with geometric flavour from SB. Spec features a tall x-height and short ascenders and descenders, allowing for tight leading. Round shoulders are replaced by tight 90&deg; bends. Strokes are optically monoline.
+      p A new neo-grotesque from SB. Spec features a tall x-height and short ascenders/descenders, allowing for tight leading. Traditionally narrow glyphs such as &ldquo;t f r&rdquo; are widened dramatically, and round transitions become tight 90&deg; bends&mdash;making for a rather special lowercase &ldquo;g.&rdquo;
+      p Spec&rsquo;s tight spacing makes for punchy display type, but with some tracking it can also work in text settings. Spec covers Latin Plus and Adobe Extended Cyrillic.
+      p $50.00 per weight or $200.00 for full family of seven weights + single-axis variable font. One license covers print, web, and app usage for up to three users. Email #[a.nearr(href="mailto:sb@sbintl.cc") sb@sbintl.cc] to purchase.
+      p For trial purposes or non-commercial usage, Spec is available for free on request. A student discount of 50% is also available on request.
+      p Designed by #[a.nearr(href="http://twitter.com/ncb0_" target="_blank") Mel Marshall] 2018&ndash;2020.<br>Words by #[a.nearr(href="http://twitter.com/neuume" target="_blank") Caleb Woodward].<br>Russian translation by #[a.nearr(href="http://twitter.com/xinoulei" target="_blank") Xinoulei].<br>Version 1.0, released 2020.01.25.<br><br>
+      h3 features:
+      .features
+        .left
+          #feature
+            p ss01 (straight #[span.ss01 &ldquo;a&rdquo;])
+            table
+              tr
+                td 
+                  h2 a
+                td
+                  h2 &rarr;
+                td 
+                  h2 #[span.ss01 a]
+          #feature
+            p ss03 (tailed #[span.ss03 &ldquo;y&rdquo;])
+            table
+              tr
+                td 
+                  h2 y
+                td
+                  h2 &rarr;
+                td 
+                  h2 #[span.ss03 y]
+          #feature
+            p ss05 (tailed #[span.ss05 &ldquo;l&rdquo;])
+            table
+              tr
+                td
+                  h2 l
+                td
+                  h2 &rarr;
+                td 
+                  h2 #[span.ss05 l]
+          #feature
+            p ss07 (straight #[span.ss07 &ldquo;R&rdquo;])
+            table
+              tr
+                td
+                  h2 R
+                td
+                  h2 &rarr;
+                td 
+                  h2 #[span.ss07 R]
+        .right
+          #feature
+            p ss02 (short #[span.ss02 &ldquo;a&rdquo;])
+            table
+              tr
+                td 
+                  h2 a
+                td
+                  h2 &rarr;
+                td 
+                  h2 #[span.ss02 a]
+          #feature
+            p ss04 (straight #[span.ss04 &ldquo;j&rdquo;])
+            table
+              tr
+                td 
+                  h2 j
+                td
+                  h2(style="transform:translateX(0px)") &rarr;
+                td 
+                  h2 #[span.ss04 j]
+          #feature
+            p ss06 (round #[span.ss06 &ldquo;G&rdquo;])
+            table
+              tr
+                td
+                  h2 G
+                td
+                  h2 &rarr;
+                td 
+                  h2 #[span.ss06 G]
+          #feature
+            p rats (variable)
+            table
+              tr
+                td
+                  h2 &#xf8fa;
+                td
+                  h2 &#xf8fb;
+    .right
+      h3 test&mdash;#[a#l-en english]/#[a#l-ru русский]
+      .trow
+        .tleft
+          p#testercaption1 Spec#[span.sups 100] @ #[span#size.tnum 25px]
+        .tright
+          input#slider1(type="range" min="10" max="100" value="25")
+      h3.w100#tester1(contenteditable="true") This morning I woke up an inch above my bed. Disoriented and still shaking off the dust of sleep, I fumblingly turned on my bedside lamp, which itself was an inch midair above the table, the table&rsquo;s feet suspended an inch above the floor. Around my room, every object was levitating yet perfectly still, as if suspended buoyant underwater.
+      .trow
+        .tleft
+          p#testercaption2 Spec#[span.sups 200] @ #[span#size.tnum 25px]
+        .tright
+          input#slider2(type="range" min="10" max="100" value="25")
+      h3.w200#tester2(contenteditable="true") Tentatively, I attempted to shift my weight over the side of the bed, the duvet floating up towards the ceiling as I unwrapped myself. The bed was heavy enough that I could grab onto it to get myself upright and carefully lower myself onto the floor. Scraping the carpet with my toes, I was able to clumsily propel myself to the window, opening the blind. The morning sky was filled by an expansive creamish terrain, pockmarked and riddled with divots and horns. Its surface seemed close enough to scrape the radio antennae on the roofs of neighbouring homes, filling the air with a pale otherworldly glow. 
+      .trow
+        .tleft
+          p#testercaption3 Spec#[span.sups 300] @ #[span#size.tnum 25px]
+        .tright
+          input#slider3(type="range" min="10" max="100" value="25")
+      h3.w300#tester3(contenteditable="true") Breakfast was difficult. The water for my coffee refused to pour downwards, instead streaming upwards and dissipating into a scalding hot stratum of fog at about eye level, forcing me to hunch over to stop my glasses from clamming up. I cracked some eggs onto the frying pan, where they began to hover in slowly-spinning discs as they fried. The cheese in my fridge all seemed to be sticking magnetically to its ceiling, vibrating with a dull hum.
+      .trow
+        .tleft
+          p#testercaption4 Spec#[span.sups 400] @ #[span#size.tnum 25px]
+        .tright
+          input#slider4(type="range" min="10" max="100" value="25")
+      h3.w400#tester4(contenteditable="true") From the kitchen window I watched as pedestrians grappled unsuccessfully at lampposts to stop themselves from being pulled into the Lagrange between the Earth and the Moon. Frogs flung through the air above the roofs, their jumps having propelled them at unexpected speeds and trajectories, each glassy-eyed face a picture of terror and surprise as they rocketed into the atmosphere. Inverted-flying herons snapped each one up with glee.
+      .trow
+        .tleft
+          p#testercaption5 Spec#[span.sups 500] @ #[span#size.tnum 25px]
+        .tright
+          input#slider5(type="range" min="10" max="100" value="25")
+      h3.w500#tester5(contenteditable="true") As the moon loomed closer and closer, the atmosphere was saturated in an electric-tasting light so lush it seemed like a liquid. The entire contents of the nearby aquarium had floated free of the tanks, forming a silver cloud layer of jellyfish spooling their shiny tendrils, writhing black octopuses, and spider crabs snapping at algae, all punctuated by rod-like vertical eels and shoals of mercury-tinted garfish murmurating as they too were snapped up by the herons.
+      .trow
+        .tleft
+          p#testercaption6 Spec#[span.sups 600] @ #[span#size.tnum 25px]
+        .tright
+          input#slider6(type="range" min="10" max="100" value="25")
+      h3.w600#tester6(contenteditable="true") In a single moment, the golden light was suddenly subsumed by black as the moon seemed to flip over itself to reveal its dark side, receding slowly into the inky sky. No longer projected by the magnetic pull of its gravity, the objects around the room softly descended onto their respective places.
+      .trow
+        .tleft
+          p#testercaption7 Spec#[span.sups 700] @ #[span#size.tnum 25px]
+        .tright
+          input#slider7(type="range" min="10" max="100" value="25")
+      h3.w700#tester7(contenteditable="true") The gradual ombre from the moon&rsquo;s gravity to the earth&rsquo;s slowly saturated me enough to make me aware of the weight of my limbs, the afterimage of the warm glow of lunar light still ringing in my head. Everything was now dipped in a deep soporific lacquer, filling ankle-deep around my feet and furniture as I waded back to my bedroom. The windows open, the liquescent essence of night had flooded back into the room, a bathypelagic dark casting a perfect anaesthetic negative of its volume. My body heavy as lead, I could barely stay awake as I lay on the mattress, the gentle hum of the house&rsquo;s electricity lulling me once more into sleep.

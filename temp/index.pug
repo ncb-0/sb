@@ -1,0 +1,15 @@
+extends base.pug
+block vars
+  - var currentpage = "home"
+append layout
+  #fullpage
+    #speechbubble
+      h2.nomargin click me!<br>нажми на меня!
+      //- h2.nomargin пипипи!
+    #bottomleft(style="transform:translateX(-3px)")
+      a#bigrat(href="spec.html") #[span]
+    #bottomright
+      h1.nomargin(style="transform:translateX(10px);margin-bottom:3px") &#xf8f9;
+      p spec typeface v1.0<br>released 2020.01.25
+      div
+        p.nomargin nónglì xīnnián kuàilè<br>happy lunar new year<br>счастливого лунного нового года
