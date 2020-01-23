@@ -2,6 +2,8 @@
 font-sans = "Spec", system-ui, "Helvetica Neue", "Helvetica", sans-serif
 $bg  = #ffcfcf
 $txt = #fc3300
+// $bg  = #af8
+// $txt = #083
 // $bg  = #fff
 // $txt = #444
 // spans
@@ -51,6 +53,8 @@ $txt = #fc3300
   padding 0
   box-sizing border-box
   user-select none
+  hyphens auto
+  // overflow-x hidden
 *:focus
   outline none
 ::selection
@@ -59,7 +63,7 @@ $txt = #fc3300
 body
   background $bg
   // padding 10px
-  // max-width 1000px
+  width 100vw
   margin 0 auto
 #container
   // max-width 1000px
@@ -75,7 +79,7 @@ body
 #headitems
   z-index 3
   padding 10px
-  // max-width 1000px
+  width 100vw
   margin 0 auto
   display grid
   grid-template-columns 300px 1fr 100px
@@ -149,6 +153,7 @@ body
   padding 10px
   z-index 1
   margin-top 45px
+  width 100vw
   display grid
   grid-gap 10px
 #fullpage
@@ -160,7 +165,7 @@ body
   // hyphens auto
 .top
   grid-column 1 / span 2
-.features
+#features
   width 285px
   display grid
   grid-template-columns 1fr 1fr
@@ -341,11 +346,13 @@ p
     text-align center
   #grid
     grid-template-columns 1fr
-  .features
+  #features
     // width 100%
   p
     font-size 14px
   h1
     // font-size 50px
+  #bottomright p:first-of-type
+    margin-bottom 0
   #bottomright div
     display none

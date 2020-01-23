@@ -63,6 +63,7 @@
   padding: 0;
   box-sizing: border-box;
   user-select: none;
+  hyphens: auto;
 }
 *:focus {
   outline: none;
@@ -72,6 +73,7 @@
 }
 body {
   background: #ffcfcf;
+  width: 100vw;
   margin: 0 auto;
 }
 #container {
@@ -89,6 +91,7 @@ body {
 #headitems {
   z-index: 3;
   padding: 10px;
+  width: 100vw;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 300px 1fr 100px;
@@ -169,6 +172,7 @@ body {
   padding: 10px;
   z-index: 1;
   margin-top: 45px;
+  width: 100vw;
   display: grid;
   grid-gap: 10px;
 }
@@ -181,7 +185,7 @@ body {
 .top {
   grid-column: 1/span 2;
 }
-.features {
+#features {
   width: 285px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -394,6 +398,9 @@ p {
   }
   p {
     font-size: 14px;
+  }
+  #bottomright p:first-of-type {
+    margin-bottom: 0;
   }
   #bottomright div {
     display: none;
