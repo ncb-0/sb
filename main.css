@@ -265,7 +265,7 @@ h2 {
   margin-bottom: 10px;
 }
 h3 {
-  font: 25px/1 "Spec", system-ui, "Helvetica Neue", "Helvetica", sans-serif;
+  font: 500 25px/1 "Spec", system-ui, "Helvetica Neue", "Helvetica", sans-serif;
   color: #fc3300;
   transform: translateX(-0.3px);
   margin-bottom: 10px;
