@@ -110,6 +110,7 @@ body {
   transform: translateY(-50%);
 }
 #about {
+  width: 244px;
   z-index: 5;
   position: fixed;
   top: 45px;
