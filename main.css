@@ -310,6 +310,7 @@ p {
   height: 8px;
   background: #fc3300;
   cursor: pointer;
+  border: none;
 }
 #slider1:hover::-webkit-slider-thumb,
 #slider2:hover::-webkit-slider-thumb,
@@ -324,7 +325,7 @@ p {
   width: 12px;
   height: 12px;
   background: #fc3300;
-  cursor: pointer;
+  cursor: pointer border none;
 }
 #slider1::-moz-range-thumb,
 #slider2::-moz-range-thumb,
@@ -340,6 +341,7 @@ p {
   height: 8px;
   background: #fc3300;
   cursor: pointer;
+  border: none;
 }
 #slider1:hover::-moz-range-thumb,
 #slider2:hover::-moz-range-thumb,
@@ -355,6 +357,7 @@ p {
   height: 12px;
   background: #fc3300;
   cursor: pointer;
+  border: none;
 }
 #tester1:active,
 #tester1:hover,
@@ -404,6 +407,9 @@ p {
     margin-bottom: 0;
   }
   #bottomright div {
+    display: none;
+  }
+  #speechbubble span {
     display: none;
   }
 }
