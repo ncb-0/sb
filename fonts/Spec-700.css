@@ -1,9 +1,0 @@
-/* Webfont: Spec-700 */@font-face {
-    font-family: 'Spec700';
-    src: url('Spec-700.woff2') format('woff2'), /* Modern Browsers */
-         url('Spec-700.otf') format('opentype'); /* Safari, Android, iOS */
-             font-style: normal;
-    font-weight: bold;
-    text-rendering: optimizeLegibility;
-}
-

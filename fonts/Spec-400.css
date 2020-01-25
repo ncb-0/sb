@@ -1,9 +1,0 @@
-/* Webfont: Spec-400 */@font-face {
-    font-family: 'Spec400';
-    src: url('Spec-400.woff2') format('woff2'), /* Modern Browsers */
-         url('Spec-400.otf') format('opentype'); /* Safari, Android, iOS */
-             font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
-}
-

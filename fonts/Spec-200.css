@@ -1,9 +1,0 @@
-/* Webfont: Spec-200 */@font-face {
-    font-family: 'SpecExtLt200';
-    src: url('Spec-200.woff2') format('woff2'), /* Modern Browsers */
-         url('Spec-200.otf') format('opentype'); /* Safari, Android, iOS */
-             font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
-}
-
