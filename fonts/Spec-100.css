@@ -1,0 +1,9 @@
+/* Webfont: Spec-100 */@font-face {
+    font-family: 'SpecThin100';
+    src: url('Spec-100.woff2') format('woff2'), /* Modern Browsers */
+         url('Spec-100.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

@@ -1,0 +1,9 @@
+/* Webfont: Spec-300 */@font-face {
+    font-family: 'SpecLight300';
+    src: url('Spec-300.woff2') format('woff2'), /* Modern Browsers */
+         url('Spec-300.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

@@ -1,0 +1,9 @@
+/* Webfont: Spec-600 */@font-face {
+    font-family: 'SpecSemBd600';
+    src: url('Spec-600.woff2') format('woff2'), /* Modern Browsers */
+         url('Spec-600.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

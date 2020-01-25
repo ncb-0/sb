@@ -56,6 +56,17 @@ block layout
                   h2 &rarr;
                 td 
                   h2 #[span.ss07 R]
+          #feature
+            p arbitrary fractions
+            h2 #[span.frac 512/65536]
+            //- table
+            //-   tr
+            //-     td
+            //-       h2 1/2
+            //-     td
+            //-       h2 &rarr;
+            //-     td 
+            //-       h2 #[span.frac 1/2]
         .right
           #feature
             p ss02 (short #[span.ss02 &ldquo;a&rdquo;])
@@ -105,6 +116,19 @@ block layout
                   h2 &rarr;
                 td
                   h2 #[span.tnum 1]
+          #feature
+            p Bulgarian alts
+            table
+              tr
+                td
+                  h2 Д
+                td
+                  h2 &rarr;
+                td
+                  h2 #[span.locl(lang="bg") Д]
+      #featurewide
+          p(style="margin-bottom:3px") case-sensitive forms
+          h2 (a&mdash;b) &rarr; #[span.case (A&mdash;B)]
     .right
       h3 test&mdash;#[a#l-en english]/#[a#l-ru русский]
       .trow
