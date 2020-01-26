@@ -108,19 +108,24 @@ body
   width 100vw
   top 50%
   transform translateY(-50%)
+#buybutton, #about
+  z-index 5
+  position fixed
+  padding 7px 6px 2px
+  border-radius 4px
+  background $bg
+  box-shadow 0 2px 4px alpha($txt,0.5)
+#buybutton
+  right 10px
+  bottom 10px
+#buybutton h3
+  animation pulse 0.75s ease infinite
 #about
   // visibility none
   // text-align right
   width 250px
-  z-index 5
-  position fixed
   top 45px
   right 10px
-  padding 7px 6px 2px
-  // border 2px solid $txt
-  border-radius 4px
-  background $bg
-  box-shadow 0 2px 4px alpha($txt,0.5)
 #speechbubble
   position fixed
   bottom 100px
@@ -210,12 +215,15 @@ a
   text-decoration none
   cursor pointer
 @keyframes blink
-  0%
+  0%, 100%
     opacity 1
   50%
     opacity 0
-  100%
+@keyframes pulse 
+  0%, 100%
     opacity 1
+  50%
+    opacity 0.5
 a.rarr:hover, a.nearr:hover
   color alpha($txt,1)
 a.rarr:hover::after, a.nearr:hover::after
