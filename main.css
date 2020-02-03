@@ -84,6 +84,9 @@
 *:focus {
   outline: none;
 }
+*::-webkit-scrollbar {
+  display: none;
+}
 ::selection {
   background: rgba(252,51,0,0.2);
 }
