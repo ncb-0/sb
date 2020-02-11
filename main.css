@@ -211,6 +211,7 @@ body {
 }
 #grid {
   grid-template-columns: 300px 1fr;
+  padding-bottom: 40px;
 }
 .top {
   grid-column: 1/span 2;
